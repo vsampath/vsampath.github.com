@@ -40,3 +40,10 @@
 	  .favicon {
 		height: 1em;
 	  }
+	  
+	/* New additions */
+	span.email { 
+		color: #333333;
+		font-size: 1.5em;
+		font-family: "Courier New", Courier, monospace;
+	}
