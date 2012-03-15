@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AU-Proteus Project - Varun Sampath</title>
+    <meta name="description" content="Work on the AU-Proteus Project for NSF REU at Auburn University.">
+    <meta name="author" content="Varun Sampath">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/tweaks.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+		
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27785677-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+		<div class="content">
+			<div class="page-header">
+			<h1>AU-Proteus Project</h1>
+			</div>
+			<div class="row">
+			<div class="span8">
+			<p>
+				This is a project I worked on for the <a href="http://www.eng.auburn.edu/programs/csse/research/impact/index.html">NSF-REU Program in Pervasive and Mobile Computing</a> at Auburn University in the summer of 2010.  The project involves 6-12 uninhabited aerial vehicles (UAVs), built using Multiplex Easy Star airframes and <a href="http://diydrones.com/profiles/blogs/ardupilot-main-page">ArduPilot</a> UAV controllers.  A collision avoidance algorithm will run on a ground control station (GCS), and will tell the planes to move to points in 3D space to avoid impact.  To facilitate bidirectional communication, <a href="http://sites.google.com/site/kf5gem/">Chester Hamilton</a> and I have constructed a ZigBee mesh network using XBee-PRO modules. We edited the ArduPilot software to allow the GCS to override the plane's current path in the interest of avoidance.  We used and modified <a href="http://arduiniana.org/libraries/newsoftserial/">NewSoftSerial</a> to let the XBee talk to the microcontroller without any serial bus conflicts.
+			</p>
+			</div>
+			<div class="span3">
+			<img src="http://www.nsf.gov/images/logos/nsf1.jpg" alt="NSF logo" />
+			</div>
+			<div class="span3">
+			<img src="http://www.auburn.edu/administration/trustees/policymanual/sealcolr.jpg" alt="Auburn University Seal" class="right" style="width: 150px; height: 150px; position: relative; top: 10px; "/>
+			</div>
+			</div>
+			<div class="row">
+			<div class="span14">
+			<p>
+			An additional, relatively cool project Chester and I worked on was researching the performance of the ZigBee PRO mesh network that will be used with the UAVs.  While the UAVs will never fly out of the GCS's XBee radio range, we decided to see what happens when nodes move around in a multi-hop network.  The results are actually interesting, if you're into that kind of hard core network benchmarking action.  Check out the links to the paper and presentations on the subject below.
+			</p>
+
+			<h3>Fruits of Labor</h3>
+			<ul>
+				<li><b>Code: </b>Code and documentation for all of the work we have done is available at this <a href="http://github.com/wjwwood/au-proteus">github</a>.</li>
+				<li><b>Intro Slides: </b>Here are the <a href="http://static.vsampath.com/research/au/AU_IntroEmbdSys_vsampath.pdf">slides</a> for a short talk that I gave on embedded systems and the project.</li>
+				<li><b>Midterm Slides: </b>We've made a pretty midterm presentation on our work, 5 weeks into the REU.  Check it out <a href="http://static.vsampath.com/research/au/AU_MidtermSlides_chamilton_vsampath.pdf">here</a>.</li>
+				<li><b>Paper: </b>Chester and I have written a <a href="http://static.vsampath.com/research/au/AU_Final_chamilton_vsampath.pdf">paper</a> on analyzing the performance of ZigBee PRO mesh networks, particularly with moving nodes.  If you ever wanted to learn more about mesh routing algorithms, this paper is for you.</li>
+				<li><b>Final Slides: </b><a href="http://static.vsampath.com/research/au/AU_FinalSlides_chamilton_vsampath.pdf">Here</a> are our slides to accompany the final paper.  They summarize the paper perfectly incomprehensibly.</li>
+				<li><b>Poster: </b>We have an academic <a href="http://static.vsampath.com/research/au/AU_FinalPoster_chamilton_vsampath.pdf">poster</a> to go with it too!</li>
+				<li><b>DIY Drones Post: </b><a href="http://diydrones.com/profiles/blogs/loading-a-waypoint-in-the-air">Here</a> is a DIY Drones blog post on our work with the ArduPilot and XBee communication.</li>
+				<li><b><span class="label success">New</span>	 (6/11/11) Paper Published: </b><a href="http://www.pennscience.org">PennScience</a>, a Penn undergraduate research journal, has published a slightly abridged version of our paper. It is viewable on pages 29-33 <a href="http://issuu.com/PennScience/docs/pennscience_vol_9_issue_2">here</a> (Flash required).</li>
+			</ul>
+
+			<h3>Further Readings</h3>
+			<ul>
+				<li>The <a href="http://www.eecs.harvard.edu/uavlab/">Harvard UAV Networking Lab</a> has studied UAV networking with 802.11 wireless protocols.</li>
+				<li><a href="http://www.cs.colorado.edu/department/publications/reports/docs/CU-CS-1018-06.pdf">SensorFlock</a> is a networked system of micro-air vehicles designed to investigate toxic plumes.</li>
+				<li>The <a href="http://www.zigbee.org/Products/DownloadZigBeeTechnicalDocuments.aspx">ZigBee</a> and <a href="http://standards.ieee.org/getieee802/download/802.15.4-2006.pdf">IEEE 802.15.4</a> specifications are always fun reads.</li>
+			</ul>
+			</div>
+			</div>
+			<div class="row">
+			<div class="span5">
+			<h3>Fellow REUers on the Project</h3>
+			<ul>
+				<li><a href="http://www.eng.auburn.edu/~sbiaz/">Dr. Saad Biaz</a></li>
+				<li><a href="http://www.eng.auburn.edu/~chapman/">Dr. Richard Chapman</a></li>
+				<li><a href="http://www.eng.auburn.edu/users/crousgl/">Dr. Gil Crouse</a></li>
+				<li><a href="http://sites.google.com/site/auburnuavresearch/home/alex-farrell/biography">Alex Farrell</a></li>
+				<li><a href="http://sites.google.com/site/kf5gem/">Chester Hamilton</a></li>
+				<li><a href="http://sites.google.com/site/auburnuavresearch/home/jared-harp/biography">Jared Harp</a></li>
+				<li><a href="http://sites.google.com/site/procta06/">Andrew Proctor</a></li>
+			</ul>
+			</div>
+			<div class="span9">
+			<img src="http://static.vsampath.com/research/au/Auburn_ppl.jpg" alt="NSF-REU UAV Team" class="right" />
+			</div>
+			</div>
+		</div>
+		<footer>
+        <p>CSS by <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Content by me. Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><br /><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png" /></a>
+		</p>
+		</footer>
+	</div>
+
+
+	</body>
+
+</html>
+
