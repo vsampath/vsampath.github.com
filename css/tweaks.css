@@ -47,3 +47,7 @@
 		font-size: 1.5em;
 		font-family: "Courier New", Courier, monospace;
 	}
+
+	li {
+		color: #404040;
+	}
