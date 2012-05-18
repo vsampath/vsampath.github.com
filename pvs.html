@@ -38,7 +38,7 @@
   <body>
 
     <div class="container">
-		<div class="content">
+		<div class="content" style="height: 650px">
 			<div class="page-header">
 				<h1>PVS: Pacemaker Verification System</h1>
 			</div>
@@ -121,27 +121,29 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-				//move from pic div to content div
 				var isPic = true;
-				if (window.location.hash == "#info") {
-					$("#panel").css("margin-left","-=820px");
-					isPic = false;
-				}
-				else {
-					if (!isPic) {
+
+				$(window).bind('hashchange', function() {
+					if (window.location.hash == "#info" && isPic) {
+						$("#panel").css("margin-left","-=820px");
+						$(".content").css("height","auto");
+						isPic = false;
+					}
+					else if (window.location.hash == "" && !isPic) {
 						$("#panel").css("margin-left","+=820px");
+						$(".content").css("height","650px");
 						isPic = true;
 					}
-					$("#continue").click(function() {
-						$("#panel").animate({ marginLeft: '-=820px'}, 500);
-	//					$("#pvs_start").hide();
-	//					$("#pvs_content").show("slide", {direction: "up" }, 1000);
-						window.location.hash = "#info";
-						isPic = false;
-						});
-				}
-
 				});
+
+				//move from pic div to content div
+				$("#continue").click(function() {
+					$("#panel").animate({ marginLeft: '-=820px'}, 500);
+					window.location.hash = "#info";
+					$(".content").css("height","auto");
+					isPic = false;
+				});
+			});
 	</script>
 
 
