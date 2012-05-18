@@ -52,7 +52,10 @@
 		color: #404040;
 	}
 
-/* for sliding panel in PVS */
+/* for sliding panel in PVS 
+ * from
+ * http://stackoverflow.com/questions/5888306/ajax-replace-and-scroll-sideways
+ */
 #slide_container {
 	width: 820px;
 	overflow: hidden;

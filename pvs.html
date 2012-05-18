@@ -121,12 +121,18 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-				//move from names div to twilio div
-				$("#continue").click(function() {
-					$("#panel").animate({ marginLeft: '-=820px'}, 500);
-//					$("#pvs_start").hide();
-//					$("#pvs_content").show("slide", {direction: "up" }, 1000);
-					});
+				//move from pic div to content div
+				if (window.location.hash == "#info") {
+					$("#panel").css("margin-left","-=820px");
+				}
+				else {
+					$("#continue").click(function() {
+						$("#panel").animate({ marginLeft: '-=820px'}, 500);
+	//					$("#pvs_start").hide();
+	//					$("#pvs_content").show("slide", {direction: "up" }, 1000);
+						window.location.hash = "#info";
+						});
+				}
 
 				});
 	</script>
