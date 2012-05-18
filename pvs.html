@@ -60,11 +60,17 @@
 					</div>
 				</div>
 			</div>
+
 			<div id="pvs_content">
 				<div class="row">
-					<div class="span14">
+					<div class="span9">
+						<a href="http://www.flickr.com/photos/76626058@N06/6877902282/"
+						title="Ring of Pacemakers by MedCPS, on Flickr"><img
+						src="http://farm7.staticflickr.com/6097/6877902282_458fc62140.jpg"
+						width="240" height="320" alt="Ring of Pacemakers" style="float: right"></a>
+						<h2>Motivation</h2>
 						<p>
-						About 3 million individuals in the world depend on surgically
+						About <strong>3 million</strong> individuals in the world depend on surgically
 						implanted pacemakers to maintain proper heart rhythm. Pacemakers are
 						inherently complex. They are programmed with tens of thousands of
 						lines of code, and are inevitably prone to bugs. Between 1990 and
@@ -75,16 +81,14 @@
 						<p>
 						The <strong>purpose</strong> of the Pacemaker Verification System is to test pacemakers
 						with the realism of clinical trials but without the inherent risks, with the goal of finding and removing software errors
-						before patient implantation.					</p>
+						before patient implantation.
+						</p>
+					</div>
 
-						<a href="http://www.flickr.com/photos/76626058@N06/7216263142/"
-						title="PVS Version 1.0 by MedCPS, on Flickr"><img
-						src="http://farm6.staticflickr.com/5452/7216263142_58c9dd72cd_c.jpg"
-						width="800" height="529" alt="PVS Version 1.0"></a>
-						<a href="http://www.flickr.com/photos/76626058@N06/7216263142/"
-						title="PVS Version 1.0 by MedCPS, on Flickr"><img
-						src="http://farm6.staticflickr.com/5452/7216263142_58c9dd72cd_c.jpg"
-						width="800" height="529" alt="PVS Version 1.0"></a>
+					<div class="span5">
+					</div>
+
+				</div> <!-- row -->
 	<!--
 					Our system addresses this essential unmet
 						need with a virtual heart that is reconfigured to exhibit different
@@ -105,12 +109,10 @@
 					model can provide, thus offering more robust testing methods aimed at
 					saving lives.
 					-->
-						</div>
-				</div>
-			</div>
-			</div>
-			</div>
 		</div>
+	</div>
+</div>
+</div>
 
 		<footer>
         <p>CSS by <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. Content by me. Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><br /><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/us/80x15.png" /></a>
@@ -122,6 +124,11 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 				var isPic = true;
+				if (window.location.hash == "#info" && isPic) {
+					$("#panel").css("margin-left","-=820px");
+					$(".content").css("height","auto");
+					isPic = false;
+				}
 
 				$(window).bind('hashchange', function() {
 					if (window.location.hash == "#info" && isPic) {
@@ -145,10 +152,6 @@
 				});
 			});
 	</script>
-
-
-
 	</body>
-
 </html>
 
