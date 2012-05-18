@@ -51,3 +51,19 @@
 	li {
 		color: #404040;
 	}
+
+/* for sliding panel in PVS */
+#slide_container {
+	width: 820px;
+	overflow: hidden;
+}
+
+#panel div {
+	width: 820px;
+	float: left;
+}
+
+#panel {
+	width: 5000px;
+}
+
