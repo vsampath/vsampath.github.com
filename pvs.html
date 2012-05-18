@@ -122,15 +122,22 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 				//move from pic div to content div
+				var isPic = true;
 				if (window.location.hash == "#info") {
 					$("#panel").css("margin-left","-=820px");
+					isPic = false;
 				}
 				else {
+					if (!isPic) {
+						$("#panel").css("margin-left","+=820px");
+						isPic = true;
+					}
 					$("#continue").click(function() {
 						$("#panel").animate({ marginLeft: '-=820px'}, 500);
 	//					$("#pvs_start").hide();
 	//					$("#pvs_content").show("slide", {direction: "up" }, 1000);
 						window.location.hash = "#info";
+						isPic = false;
 						});
 				}
 
