@@ -70,3 +70,17 @@
 	width: 5000px;
 }
 
+q {
+	size: 38px;
+	line-height: 38px;
+	letter-spacing: -1px;
+	width: 820px;
+	padding: 5px;
+	margin: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FA4B2A;
+	font-family: ff-din-web-condensed,helvetica,sans-serif;
+	font-style: italic;
+	display: block;
+}
