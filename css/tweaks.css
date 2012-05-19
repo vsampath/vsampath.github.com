@@ -71,15 +71,14 @@
 }
 
 q {
-	size: 38px;
-	line-height: 38px;
+	font-size: 20px;
+	line-height: 24px;
 	letter-spacing: -1px;
 	width: 820px;
-	padding: 5px;
-	margin: 25px;
+	padding: 10px 0 10px 0;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #FA4B2A;
+	color: #ee0000;
 	font-family: ff-din-web-condensed,helvetica,sans-serif;
 	font-style: italic;
 	display: block;
