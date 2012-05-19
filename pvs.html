@@ -56,7 +56,7 @@
 				<hr />
 				<div class="row">
 					<div class="span14" style="text-align:center">
-					<button class="btn success medium" id="continue">Continue</button>
+					<button class="btn danger medium" id="continue">Continue</button>
 					</div>
 				</div>
 			</div>
@@ -67,7 +67,7 @@
 						<a href="http://www.flickr.com/photos/76626058@N06/6877902282/"
 						title="Ring of Pacemakers by MedCPS, on Flickr"><img
 						src="http://farm7.staticflickr.com/6097/6877902282_458fc62140.jpg"
-						width="240" height="320" alt="Ring of Pacemakers" style="float: right; padding: 5px"></a>
+						width="240" height="320" alt="Ring of Pacemakers" style="float: right; padding: 5px 5px 10px 5px"></a>
 						<h2>Motivation</h2>
 						<p>
 						About <strong>3 million</strong> individuals in the world depend on
@@ -109,40 +109,70 @@
 						<span class="span14">
 						 <h3>The Virtual Heart</h3>
 						 <p>
-							The virtual heart was built using finite state machines to model the
-							heart's signal propagation properties for different types of
-							arrhythmias. Using code generation tools, these models were directly
-							translated to an FPGA hardware implementation, ensuring proper and
-							desirable behavior of the models.
+							The virtual heart was built using finite state machines to model
+							the heart's signal propagation properties for different types of
+							arrhythmias. Using code generation tools, these models were
+							directly translated to an FPGA hardware implementation, ensuring
+							proper and desirable behavior of the models. See <a
+							href="http://www.seas.upenn.edu/~zhihaoj/VHM.html">Penn mLAB's
+							page</a> for research and publications on the underlying virtual
+							heart model.
 							</p>
 					</span>
 				</div> <!-- row -->
 
 				<div class="row">
 					<span class="span14">
+
 					<h2>Results</h2>
+					<a href="http://www.flickr.com/photos/76626058@N06/7229070120/" title="Users by
+					MedCPS, on Flickr"><img
+					src="http://farm8.staticflickr.com/7242/7229070120_d50c39f75c_n.jpg"
+					width="320" height="185" alt="Users" style="float: left; padding: 5px 15px 15px 0"></a>
+					<p>
+						The Pacemaker Verification System allows testing with a realism
+						prior systems cannot match. By capturing the closed-loop
+						interactions between the pacemaker and the heart, we can detect
+						errors that won't crop up in static input testing. One such
+						scenario that we can demo with a real pacemaker is <a
+						href="http://emedicine.medscape.com/article/159645-overview">endless-loop
+						tachycardia</a>. The feedback loop forced by the pacemaker in this
+						case can only be detected with a closed-loop testing system like
+						this.
+					</p>
+					<p>
+						There are a variety of applications for a system like this. Imagine
+						the FDA using this device to ensure all pacemakers hit a testing
+						standard. Or what if medical device manufacturers could load their
+						own custom models and see how corner cases could apply to new
+						pacing algorithms they're developing. Lastly, consider your
+						cardiologist, who can configure a model for your heart and see if
+						the pacemaker he bought for you will do the job. These are but a
+						few of the possibilities this testing platform affords.
+					</p>
 					</span>
 				</div>
-	<!--
-					Our system addresses this essential unmet
-						need with a virtual heart that is reconfigured to exhibit different
-						arrhythmias.
 
-					The virtual heart was built using finite state machines to model the
-					heart’s signal propagation properties for different types of
-					arrhythmias. Using code generation tools, these models were directly
-					translated to an FPGA hardware implementation, ensuring proper and
-					desirable behavior of the models.
+				<div class="row">
+					<span class="span14" style="text-align: center">
+					 <q>Let our heart catch bugs before your heart does.</q>
+				 </span>
+				</div>
 
-					This virtual heart interfaces with various types of pacemakers and
-					reacts to them in a manner that mimics a real heart. It provides both
-					output heart beats to the pacemaker and reacts to paces from the
-					pacemaker. A top-level user interface allows manufacturers, regulators,
-					and cardiologists to review the results of this closed-loop, dynamic
-					system. This system allows for dynamic interactions that no static heart
-					model can provide, thus offering more robust testing methods aimed at
-					saving lives.
-					-->
+				<div class="row">
+					<span class="span14">
+					<h2>Recognition</h2>
+					<ul>
+						<li>Winner of the Penn Engineering school-wide Senior Design Competition</li>
+						<li>Winner of the Berger Award, <a href="http://www.ese.upenn.edu/seniordesign">Penn ESE Senior Design</a></li>
+						<li>Finalist in the <a
+						href="http://www.ieee.org/membership_services/membership/students/competitions/change_the_world/index.html">2012
+						IEEE Presidents' Change the World Competition</a></li>
+						<li>Demonstrated at IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2012), Beijing, China</li>
+					</ul>
+				 </span>
+				</div>
+
 				<div class="row">
 					<span class="span14">
 					<h2>A Presentation in Pictures</h2>
